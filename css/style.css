@@ -1,0 +1,30 @@
+#header {
+	display: none;
+}
+#breadcrumb {
+	display: none;
+}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	width: 100% !important;
+}
+#main-content {
+	padding: 20px;
+}
+.view-content {
+	clear: both;
+}
+.btn-group-vertical {
+	width: 100%;
+}
+.btn-group-vertical>.btn {
+	width: 100% !important;
+	text-align: left;
+	height: 48px;
+}
+#refresh-page {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.span12 {
+	width: 98% !important;
+}
