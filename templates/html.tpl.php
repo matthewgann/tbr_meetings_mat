@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en" manifest="<?php print base_path( )?><?php print path_to_theme() ?>/manifest.appcache.php">
 <!--[if lt IE 7]> <html class="ie6 ie" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 ie" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 ie" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"> <![endif]-->
@@ -6,18 +7,19 @@
 <head>
   <?php print $head; ?>
   <!-- Set the viewport width to device width for mobile -->
+ 
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta http-equiv="CACHE-CONTROL" CONTENT="NO-CACHE">
   <title><?php print $head_title; ?></title>
-  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-144x144-precomposed.png" sizes="144x144" ><!-- iPad with Retina display -->
-  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-114x114-precomposed.png" sizes="114x114"><!-- iPhone with Retina display -->
-  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-72x72-precomposed.png" sizes="72x72"><!-- Non-Retina iPad -->
-  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-precomposed.png"><!-- Non-Retina iPhone, iPod Touch, and Android 2.1+ devices -->
-  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Landscape~ipad.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1)" />
-  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Landscape@2x~ipad.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" />		
-  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Portrait~ipad.png" media="(min-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)"  />
-  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Portrait@2x~ipad.png" media="(min-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)"  />
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-144x144-precomposed.png?v1" sizes="144x144" ><!-- iPad with Retina display -->
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-114x114-precomposed.png?v1" sizes="114x114"><!-- iPhone with Retina display -->
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-72x72-precomposed.png?v1" sizes="72x72"><!-- Non-Retina iPad -->
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/apple-touch-icon-precomposed.png?v1"><!-- Non-Retina iPhone, iPod Touch, and Android 2.1+ devices -->
+  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Landscape~ipad.png?v1" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1)" />
+  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Landscape@2x~ipad.png?v1" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" />		
+  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Portrait~ipad.png?v1" media="(min-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)"  />
+  <link rel="apple-touch-startup-image" href="<?php print base_path( )?><?php print path_to_theme() ?>/images/icons/Default-Portrait@2x~ipad.png?v1" media="(min-device-width: 768px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)"  />
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <!-- IE Fix for HTML5 Tags -->

@@ -7,16 +7,6 @@
  * @ingroup views_templates
  */
 ?>
-<?php
-$mango = '';
-$forge = $forge + 1;
-?>
-
-<?php foreach ($rows as $id => $row): ?>
-  <?php $mango .= '<button type="button" class="btn"><i class="icon-file">'; ?>
-    <?php $mango .= $row; ?>
-  <?php $mango .= '</i></button>'; ?>
-<?php endforeach; ?>
 
 <?php $newtitle = str_replace(' ', '-', $title); ?>
 
@@ -28,7 +18,12 @@ $forge = $forge + 1;
   <div id="collapse-<?php print $newtitle; ?>" class="accordion-body collapse">
     <div class="accordion-inner"> 
     	<div class="btn-group btn-group-vertical">
-    	<?php print $mango; ?>
+    	<?php foreach ($rows as $id => $row): ?>
+		<?php print '<button type="button" class="btn"><i class="icon-file">'; ?>
+		<?php print $row; ?>
+		<?php print '</i></button>'; ?>
+		<?php endforeach; ?>
+
     	</div>
     </div>
   </div>

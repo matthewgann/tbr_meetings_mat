@@ -10,6 +10,10 @@
   </div>
 </div>
 <!-- /#skipnav -->
+<div class="blue-header">
+<img src="/profiles/tbr_hosting/themes/tbr_bootstrap/images/wordmark.png" width="399" height="14" alt="Tennessee Board of Regents">
+<div class="datenoshow"><?php echo date('l jS \of F Y h:i:s A'); ?></div>
+</div>
 <?php if (($user->uid) && ($secondary_nav)): ?>
 <div id="secondary-menu" class="clearfix"> <?php print render($secondary_nav); ?> </div>
 <!-- /#secondary-menu -->
@@ -223,4 +227,10 @@
 </div>
 <!-- /#footer -->
 <?php endif; ?>
-
+<div class="blue-footer">
+	<button type="button" class="btn btn-refresh">
+    	<i class="icon-refresh">
+    		<a href="#">Refresh</a>
+    	</i>
+    	</button>
+</div>

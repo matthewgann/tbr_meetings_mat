@@ -52,13 +52,6 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <div id="refresh-page">
-    	<button type="button" class="btn btn-refresh">
-    	<i class="icon-refresh">
-    		<a href="#">Refresh</a>
-    	</i>
-    	</button>
-    </div>
     <div class="view-content">
     	<div class="accordion" id="accordion2">
 			<?php print $rows; ?>
