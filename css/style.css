@@ -88,3 +88,11 @@ table.views-table {
 .views-table tbody td {
 	background: #fff;
 }
+
+.accordion-inner a.btn {
+	width: 96%;
+	clear: both;
+	text-align: left;
+	height: 40px;
+	line-height: 40px;
+}

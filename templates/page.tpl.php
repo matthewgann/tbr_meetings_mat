@@ -218,6 +218,7 @@
     <?php endif; ?>
   </div>
 </div>
+
 <!-- /#main, /#main-wrapper -->
 <?php if ($page['footer']): ?>
 <div id="footer" class="clearfix">
@@ -227,10 +228,3 @@
 </div>
 <!-- /#footer -->
 <?php endif; ?>
-<div class="blue-footer">
-	<button type="button" class="btn btn-refresh">
-    	<i class="icon-refresh">
-    		<a href="#">Refresh</a>
-    	</i>
-    	</button>
-</div>
